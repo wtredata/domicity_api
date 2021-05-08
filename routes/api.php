@@ -1,6 +1,6 @@
 <?php
 
-use App\City;
+use App\Http\Controllers\CityController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,5 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::resource('city', [City::class]);
+Route::resource('city', 'CityController');
 
