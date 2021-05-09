@@ -22,6 +22,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('city', 'CityController');
 Route::resource('department', 'DepartmentController');
-Route::get('stateCity/{department}', 'CityController@index');
+Route::get('stateCity/{department}', 'DepartmentCityController@index');
 Route::resource('solicitude', 'SolicitudeController');
 
